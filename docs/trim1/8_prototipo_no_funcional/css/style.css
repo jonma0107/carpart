@@ -81,9 +81,9 @@ body {
   background: #FFF;
 }
 
-.clear {
+/* .clear {
   clear: both;
-}
+} */
 
 /* ------------------------------------------------------------------------------------- */
 /* -------------- GUÍA DE ESTILOS: TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS --------------- */
@@ -97,6 +97,7 @@ body {
   color: #FFF;
   text-align: center;
   padding: 15px;
+  /* clear: both; */
 }
 
 /* Subtítulos */
@@ -250,15 +251,12 @@ section img {
 /* Portafolio */
 
 .port-col {
-  overflow: scroll;
-}
-
-.port-col {
   height: 100%;
   width: 33.33%;
   float: left;
   /* text-align: center; */
   padding: 20px;
+  overflow-y: scroll;
 }
 
 .port-col img {
