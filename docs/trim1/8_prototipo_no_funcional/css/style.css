@@ -24,7 +24,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); */
 
 @font-face {
-  font-family: NeueMachina-Regular;
+  font-family: MonumentExtended-Regular;
   src: url(../fuentes/NeueMachina-Regular.otf);
 }
 
@@ -107,7 +107,7 @@ body {
 
 /* Párrafos */
 .parrafo {
-  font-family: 'NeueMachina-Regular', sans-serif;
+  font-family: 'MonumentExtended-Regular', sans-serif;
   text-align: justify;
   padding: 10px;
 }
