@@ -81,10 +81,6 @@ body {
   background: #FFF;
 }
 
-/* .clear {
-  clear: both;
-} */
-
 /* ------------------------------------------------------------------------------------- */
 /* -------------- GUÍA DE ESTILOS: TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS --------------- */
 /* ------------------------------------------------------------------------------------- */
@@ -234,7 +230,7 @@ header {
 
 .transparente p {
   padding-top: 10%;
-  font-size: larger;
+  font-size: medium;
   font-weight: 900;
   word-spacing: 7px;
   text-transform: uppercase;
