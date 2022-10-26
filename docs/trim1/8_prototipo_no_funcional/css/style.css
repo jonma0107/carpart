@@ -29,13 +29,13 @@
 }
 
 @font-face {
-  font-family: Motorblock;
-  src: url(../fuentes/Motorblock.ttf);
+  font-family: Modern+Deco;
+  src: url(../fuentes/Modern+Deco.ttf);
 }
 
 @font-face {
-  font-family: Modern+Deco;
-  src: url(../fuentes/Modern+Deco.ttf);
+  font-family: Motorblock;
+  src: url(../fuentes/Motorblock.ttf);
 }
 
 
@@ -57,9 +57,9 @@ body {
 }
 
 /* Borde */
-.borde {
+/* .borde {
   border: 1px solid gray;
-}
+} */
 
 /* Fondo color Negro */
 .color-negro {
@@ -119,7 +119,7 @@ body {
 
 .imagen {
   text-align: center;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .imagen img {
@@ -216,7 +216,10 @@ header, section {
 
 header {
   background-image: url(../img/header.jpg);
-  background-size: 100%;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+
   /* background-attachment: fixed; */
 }
 
@@ -235,7 +238,7 @@ header {
   word-spacing: 7px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'NeueMachina-Regular';
+  font-family: 'MonumentExtended-Regular';
 }
 
 section img {
@@ -283,11 +286,11 @@ section img {
 }
 
 .nos-col-cnt.color-blanco {
-  padding: 40px;
+  padding: 33px;
 }
 
 .nos-col-cnt.color-gris-osc {
-  padding: 40px;
+  padding: 33px;
 }
 
 /*Contáctenos*/
