@@ -24,11 +24,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); */
 
 @font-face {
-  font-family: MonumentExtended-Regular;
-  src: url(../fuentes/MonumentExtended-Regular.otf);
-}
-
-@font-face {
   font-family: Modern+Deco;
   src: url(../fuentes/Modern+Deco.ttf);
 }
@@ -37,13 +32,6 @@
   font-family: Motorblock;
   src: url(../fuentes/Motorblock.ttf);
 }
-
-@font-face {
-  font-family: NeueMachina-Regular;
-  src: url(../fuentes/NeueMachina-Regular.otf);
-
-}
-
 
 /* ------------------------------------------------------------------------------------- */
 /* CLASES ESPECIALES ------------------------------------------------------------------- */
@@ -113,7 +101,7 @@ body {
 
 /* Párrafos */
 .parrafo {
-  font-family: 'Modern+Deco';
+  font-family: 'Modern+Deco', sans-serif;
   text-align: justify;
   padding: 0px 10px 20px 10px;
 }
@@ -165,7 +153,7 @@ body {
 /*----------------------------------------------*/
 
 .espacio-temporal {
-  font-family: 'Modern+Deco';
+  font-family: 'Modern+Deco', sans-serif;
   font-size: 0.8em;
   text-align: center;
   padding: 10px;
@@ -266,7 +254,7 @@ header {
   word-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Modern+Deco';
+  font-family: 'Modern+Deco', sans-serif;
 }
 
 section img {
