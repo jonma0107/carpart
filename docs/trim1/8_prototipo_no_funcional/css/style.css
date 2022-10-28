@@ -113,7 +113,7 @@ body {
 
 /* Párrafos */
 .parrafo {
-  font-family: 'NeueMachina-Regular';
+  font-family: 'Modern+Deco';
   text-align: justify;
   padding: 0px 10px 20px 10px;
 }
@@ -165,7 +165,7 @@ body {
 /*----------------------------------------------*/
 
 .espacio-temporal {
-  font-family: 'MonumentExtended-Regular';
+  font-family: 'Modern+Deco';
   font-size: 0.8em;
   text-align: center;
   padding: 10px;
@@ -266,7 +266,7 @@ header {
   word-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'MonumentExtended-Regular';
+  font-family: 'Modern+Deco';
 }
 
 section img {
