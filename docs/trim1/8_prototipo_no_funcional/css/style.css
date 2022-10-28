@@ -38,6 +38,12 @@
   src: url(../fuentes/Motorblock.ttf);
 }
 
+@font-face {
+  font-family: NeueMachina-Regular;
+  src: url(../fuentes/NeueMachina-Regular.otf);
+
+}
+
 
 /* ------------------------------------------------------------------------------------- */
 /* CLASES ESPECIALES ------------------------------------------------------------------- */
@@ -107,7 +113,7 @@ body {
 
 /* Párrafos */
 .parrafo {
-  font-family: 'MonumentExtended-Regular', sans-serif;
+  font-family: 'NeueMachina-Regular';
   text-align: justify;
   padding: 0px 10px 20px 10px;
 }
