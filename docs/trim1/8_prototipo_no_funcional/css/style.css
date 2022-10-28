@@ -33,6 +33,11 @@
   src: url(../fuentes/Motorblock.ttf);
 }
 
+@font-face {
+  font-family: MonumentExtended-Regular;
+  src: url(../fuentes/MonumentExtended-Regular.otf);
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* CLASES ESPECIALES ------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
@@ -254,7 +259,6 @@ header {
   word-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Modern+Deco', sans-serif;
 }
 
 section img {
