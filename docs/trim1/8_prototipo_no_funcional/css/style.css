@@ -153,24 +153,6 @@ body {
   background: rgba(30, 30, 30, 0.5);
 }
 
-/*----------------------------------------------*/
-/*--------- Ubicación Espacio Temporal ---------*/
-/*----------------------------------------------*/
-
-.espacio-temporal {
-  font-family: 'Modern+Deco', sans-serif;
-  font-size: 0.8em;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #CCC;
-}
-
-/*----------------------------------------------*/
-/*----------------- Social Media ---------------*/
-/*----------------------------------------------*/
-
-
-
 /* ------------------------------------------------------------------------------------- */
 /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
 /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
@@ -178,8 +160,8 @@ body {
 
 /* Contenedor */
 .contenedor {
-  width: 90%;
-  margin: 0 auto;
+  width: 95%;
+  margin: auto;
   max-width: 1280px;
   border-top: 0;
 }
@@ -374,6 +356,37 @@ section img {
   height: 30%;
 }
 
+/*----------------------------------------------*/
+/*--------- Ubicación Espacio Temporal ---------*/
+/*----------------------------------------------*/
+
+.espacio-temporal {
+  font-family: 'Modern+Deco', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+/*----------------------------------------------*/
+/*----------------- Social Media ---------------*/
+/*----------------------------------------------*/
+
+.social-media {
+  display: inline-block;
+  padding: 10px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 3em;
+  padding: 0px 5px;
+}
+
+.social-media a:hover {
+  color: #FFF;
+}
+
 
 /*----------------------------------------------*/
 /*---------------- Pie de Página ---------------*/
@@ -382,7 +395,45 @@ section img {
 footer {
   width: 100%;
   height: 70px;
+  color: #fff;
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+/* -------------------------------------- TABLETS -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Tablet: Media Queries */
+@media (max-width: 992px) {
+
+  /* Contenedor */
+  .contenedor {
+    width: 100%;
+  }
+
+  /* Navegador */
+  nav {
+    height: 150px;
+  }
+
+  /* Logo */
+  .logo {
+    width: 100%;
+    height: 66.66%;
+  }
+
+  /* Menú */
+  .menu {
+    width: 80%;
+    height: 33.33%;
+  }
+
+  /* Ingreso */
+  .ingreso {
+    width: 20%;
+    height: 33.33%;
+  }
+}
+
 
 
 /* .header{
