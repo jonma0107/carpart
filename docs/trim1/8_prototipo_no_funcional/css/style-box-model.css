@@ -172,20 +172,25 @@ nav {
     background-color: rgb(20, 37, 220); */
   height: 49px;
   width: 100%;
+  border-bottom: 1px solid gray;
 }
 
 /* Logo */
 .logo {
+  position: relative;
   width: 20%;
   height: 100%;
-  /* border: 2px solid black; */
-  background-color: #fff;
+  background-color: #000;
   float: left;
 }
 
 .logo img {
-  width: 256px;
-  height: 49px;
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
@@ -193,7 +198,6 @@ nav {
 .menu {
   width: 65%;
   height: 100%;
-  /* border: 2px solid black; */
   background-color: #ef8814;
   float: left;
 }
@@ -204,7 +208,6 @@ nav {
 .ingreso {
   width: 15%;
   height: 100%;
-  /* border: 2px solid black; */
   background-color: #000000;
   float: left;
 }
@@ -215,15 +218,15 @@ nav {
 
 header, section {
   /* height: 600px; */
-  height: 100vh;
+  height: 95vh;
 }
 
 header {
   background-image: url(../img/header.jpg);
-  /* background-size: 100%; */
+  /* background-size: 100% 100%;
+  background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
+  background-size: 100% 100%;
 }
 
 .transparente {
@@ -297,13 +300,10 @@ section img {
   text-align: center;
 }
 
-.nos-col-cnt.color-blanco {
-  padding: 33px;
+.nos-col-cnt {
+  padding: 25px;
 }
 
-.nos-col-cnt.color-gris-osc {
-  padding: 33px;
-}
 
 .color-gris-izq .subtitulo,
 .color-gris-izq .parrafo {
@@ -354,6 +354,7 @@ section img {
 .cont-fila-abj {
   width: 100%;
   height: 30%;
+  /* padding: 10px; */
 }
 
 /*----------------------------------------------*/
@@ -396,7 +397,15 @@ section img {
 footer {
   width: 100%;
   height: 70px;
+  padding: 10px;
+}
+
+footer .parrafo {
+  text-align: center;
   color: #fff;
+  font-size: 0.8em;
+
+
 }
 
 /* ------------------------------------------------------------------------------------- */
