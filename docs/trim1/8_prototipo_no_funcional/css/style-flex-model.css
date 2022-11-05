@@ -3,22 +3,8 @@
 /* ------------------------------------------------------------------------------------- */
 
 
-
-/* .lista{
-    text-align: left;
-}
-.inicio {
-    text-align: center;
-} */
-
-/* div{
-    width: 200px;
-    height: 100px;
-    border: 2px solid black;
-} */
-
 /* ------------------------------------------------------------------------------------- */
-/* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
+/* ------------------------------------ FUENTES ---------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); */
@@ -39,7 +25,7 @@
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* CLASES ESPECIALES ------------------------------------------------------------------- */
+/* -------------------------------- CLASES ESPECIALES ---------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 
 /* Selector Universal */
@@ -56,9 +42,9 @@ body {
 }
 
 /* Borde */
-/* .borde {
-  border: 1px solid gray;
-} */
+.borde {
+  border: 1px solid #CCC;
+}
 
 /* Fondo color Negro */
 .color-negro {
@@ -71,7 +57,7 @@ body {
 }
 
 /* Fondo color gris claro */
-.color-gris-claro {
+.color-gris-clr {
   background: #AAAAAA;
 }
 
@@ -90,8 +76,10 @@ body {
   background: #343A40;
   font-family: 'Motorblock', sans-serif;
   color: #FFF;
-  text-align: center;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
   /* clear: both; */
 }
 
@@ -108,7 +96,7 @@ body {
 .parrafo {
   font-family: 'Modern+Deco', sans-serif;
   text-align: justify;
-  padding: 0px 10px 20px 10px;
+  padding: 10px;
 }
 
 
@@ -118,7 +106,7 @@ body {
 
 .imagen {
   text-align: center;
-  padding: 20px 10px 10px 10px;
+  padding: 10px;
 }
 
 .imagen img {
@@ -140,7 +128,7 @@ body {
 
 .ver a {
   display: block;
-  width: 50%;
+  /* width: 50%; */
   margin: auto;
   text-decoration: none;
   color: #EEE;
@@ -161,27 +149,48 @@ body {
 /* Contenedor */
 .contenedor {
   width: 95%;
-  margin: auto;
   max-width: 1280px;
-  border-top: 0;
+  margin: auto;
+  /* border-top: 0; */
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-/* Navegador */
+
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------- Navegador, Encabezado, Secciones ----------------------- */
+/* ----------------------------------------- Footer ------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+
+
+nav,
+.titulo,
+section,
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/*----------------------------------------------*/
+/*----------------- Navegador ------------------*/
+/*----------------------------------------------*/
 nav {
-  /* padding: 10px;
-    background-color: rgb(20, 37, 220); */
   height: 49px;
-  width: 100%;
-  border-bottom: 1px solid gray;
+  /* width: 100%;
+  border-bottom: 1px solid gray; */
 }
 
-/* Logo */
+/*----------------------------------------------*/
+/*--------------------- Logo -------------------*/
+/*----------------------------------------------*/
 .logo {
   position: relative;
   width: 20%;
   height: 100%;
   background-color: #000;
-  float: left;
+  /* float: left; */
+  flex: 20%;
 }
 
 .logo img {
@@ -194,34 +203,38 @@ nav {
 
 }
 
-/* Menú */
+/*----------------------------------------------*/
+/*--------------------- Menú -------------------*/
+/*----------------------------------------------*/
 .menu {
-  width: 65%;
-  height: 100%;
+  /* width: 65%;
+  height: 100%; */
   background-color: #ef8814;
-  float: left;
+  /* float: left; */
+  flex: 65%;
 }
 
 /*----------------------------------------------*/
 /*-------------------- Ingreso -----------------*/
 /*----------------------------------------------*/
 .ingreso {
-  width: 15%;
+  /* width: 15%;
   height: 100%;
-  background-color: #000000;
-  float: left;
+  background-color: #000000; */
+  /* float: left; */
+  flex: 15%;
 }
 
 /*----------------------------------------------*/
 /*----------- Encabezado y Secciones -----------*/
 /*----------------------------------------------*/
 
-header, section {
-  /* height: 600px; */
+/* section {
   height: 95vh;
-}
+} */
 
 header {
+  height: 95vh;
   background-image: url(../img/header.jpg);
   /* background-size: 100% 100%;
   background-attachment: fixed; */
@@ -262,7 +275,7 @@ section img {
   float: left;
   /* text-align: center; */
   padding: 20px;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .port-col img {
@@ -280,113 +293,124 @@ section img {
 /*------------------- Nosotros -----------------*/
 /*----------------------------------------------*/
 
-.nos-fila {
-  width: 100%;
-  height: 33.33%;
+.nosotros {
+  /* height: auto; */
+  /* min-height: 82.5vh; */
+  display: flex;
+  flex-flow: column wrap;
 }
 
-.nos-col-ext {
-  width: 40%;
-  height: 100%;
-  float: left;
-  /* overflow-y: scroll; */
+.nos-fila-arr,
+.nos-fila-cnt,
+.nos-fila-abj {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nos-col-izq,
+.nos-col-der {
+  flex: 40%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .nos-col-cnt {
-  width: 20%;
-  height: 100%;
-  float: left;
-  /* padding: 15px; */
-  text-align: center;
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nos-col-cnt {
-  padding: 25px;
-}
-
-
-.color-gris-izq .subtitulo,
-.color-gris-izq .parrafo {
+.nosotros .nos-col-izq .subtitulo,
+.nosotros .nos-col-izq .parrafo {
   text-align: right;
 }
 
-.color-gris-izq a {
+.nosotros .nos-col-izq a {
   margin-right: 0;
 }
 
-.nos-col-der .subtitulo {
+.nosotros .nos-col-der .subtitulo,
+.nosotros .nos-col-der .parrafo {
   text-align: left;
 }
 
-.nos-col-der .parrafo {
-  text-align: left;
-  color: #fff;
-}
-
-.nos-col-der a {
+.nosotros .nos-col-der a {
   margin-left: 0;
-}
-
-.nos-fila p {
-  padding-top: 20px;
 }
 
 /*----------------------------------------------*/
 /*----------------- Contáctenos ----------------*/
 /*----------------------------------------------*/
 
-.cont-col {
-  width: 50%;
-  height: 100%;
-  float: left;
+.contactenos {
+  min-height: 83.5vh;
+}
+
+.cont-col-izq,
+.cont-col-der {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .cont-fila-arr {
-  width: 100%;
-  height: 70%;
+  height: 65%;
 }
 
 .cont-fila-arr iframe {
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 .cont-fila-abj {
-  width: 100%;
-  height: 30%;
-  /* padding: 10px; */
+  height: 35%;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 /*----------------------------------------------*/
 /*--------- Ubicación Espacio Temporal ---------*/
 /*----------------------------------------------*/
 
-.espacio-temporal {
+/* Ubicación Espacio temporal */
+.cont-fila-abj .espacio-temporal {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   font-family: 'Modern+Deco', sans-serif;
   font-size: 0.8em;
   text-align: center;
-  padding: 10px;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
 }
 
 /*----------------------------------------------*/
 /*----------------- Social Media ---------------*/
 /*----------------------------------------------*/
 
-.social-media {
-  /* display: inline-block; */
-  padding: 10px;
+/* Social meida */
+.cont-fila-abj .social-media {
+  height: 40%;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .social-media a {
+  flex: 1;
   color: #000;
   font-size: 3em;
-  padding: 0px 5px;
 }
 
 .social-media a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 
@@ -394,25 +418,24 @@ section img {
 /*---------------- Pie de Página ---------------*/
 /*----------------------------------------------*/
 
+/* Pie de Página */
 footer {
-  width: 100%;
-  height: 70px;
-  padding: 10px;
+  height: auto;
 }
 
 footer .parrafo {
-  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 0.8em;
-
-
 }
 
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
 /* -------------------------------------- TABLETS -------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
-/* Tablet: Media Queries */
 @media (max-width: 992px) {
 
   /* Contenedor */
@@ -423,30 +446,262 @@ footer .parrafo {
   /* Navegador */
   nav {
     height: 150px;
+    flex-flow: row wrap;
   }
 
   /* Logo */
   .logo {
+    flex: auto;
     width: 100%;
-    height: 66.66%;
-    text-align: center;
-    background-image: linear-gradient(to left, #ef8814 50%, #000 50%);
-  }
-
-  .logo img {
-    width: 80%;
-    height: 100%;
+    height: 100px;
   }
 
   /* Menú */
   .menu {
-    width: 80%;
-    height: 33.33%;
+    flex: 80%;
+    height: 50px;
+    background: #ef8814;
   }
 
   /* Ingreso */
   .ingreso {
-    width: 20%;
-    height: 33.33%;
+    flex: 20%;
+    height: 50px;
+  }
+
+  /* Portafolio */
+  .portafolio {
+    height: auto;
+    min-height: 82.5vh;
+    flex-flow: row wrap;
+  }
+
+  .port-col-cnt,
+  .port-col-der {
+    flex: 1;
+  }
+
+  /* Nosotros */
+  .nos-fila-arr,
+  .nos-fila-cnt,
+  .nos-fila-abj {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .nos-fila-arr .nos-col-der,
+  .nos-fila-abj .nos-col-der,
+  .nos-fila-cnt .nos-col-izq {
+    display: none;
+  }
+
+  .nos-col-izq,
+  .nos-col-der {
+    flex: 40%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .nos-col-cnt {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .nosotros .nos-col-izq .subtitulo,
+  .nosotros .nos-col-izq .parrafo {
+    text-align: right;
+  }
+
+  .nosotros .nos-col-izq a {
+    margin-right: 0;
+  }
+
+  .nosotros .nos-col-der .subtitulo,
+  .nosotros .nos-col-der .parrafo {
+    text-align: left;
+  }
+
+  .nosotros .nos-col-der a {
+    margin-left: 0;
+  }
+
+  /* Contáctenos */
+  .contactenos {
+    height: 83.5vh;
+    flex-flow: column wrap;
+  }
+
+  .cont-col-izq,
+  .cont-col-der {
+    flex-flow: row wrap;
+  }
+
+  .cont-fila-arr {
+    height: auto;
+    flex: 1;
+  }
+
+  .cont-fila-abj {
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /* Ubicación Espacio temporal */
+  .cont-fila-abj .espacio-temporal {
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Social meida */
+  .cont-fila-abj .social-media {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .social-media a {
+    flex: 1;
+    color: #000;
+    font-size: 3em;
+  }
+
+  .social-media a:hover {
+    color: #fff;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
+/* ------------------------------------- CELULARES ------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* Navegador */
+  nav {
+    flex-flow: column nowrap;
+  }
+
+  /* Logo */
+  .logo {
+    flex: auto;
+    width: 100%;
+    height: 50px;
+  }
+
+  .logo img {
+    width: 50%;
+  }
+
+  /* Menú */
+  .menu {
+    flex: auto;
+    height: 50px;
+    background: #ef8814;
+  }
+
+  /* Ingreso */
+  .ingreso {
+    flex: auto;
+    height: 50px;
+  }
+
+  /* Encabezado */
+  header {
+    min-height: auto;
+    background-attachment: initial;
+    height: 50vh;
+  }
+
+  .imagen img {
+    border-radius: 0;
+    width: 75px;
+    height: 75px;
+  }
+
+  /* Portafolio */
+  .port-col-cnt,
+  .port-col-der {
+    flex: 100%;
+  }
+
+
+  /* Nosotros */
+  .nos-fila-arr .nos-col-der,
+  .nos-fila-abj .nos-col-der,
+  .nos-fila-cnt .nos-col-izq {
+    display: none;
+  }
+
+  .nos-fila-arr .nos-col-izq,
+  .nos-fila-abj .nos-col-izq {
+    order: 2;
+  }
+
+  .nos-fila-arr .nos-col-cnt,
+  .nos-fila-abj .nos-col-cnt {
+    order: 1;
+  }
+
+  .nos-col-izq,
+  .nos-col-der {
+    flex: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .nos-col-cnt {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .nosotros .nos-col-izq .subtitulo,
+  .nosotros .nos-col-izq .parrafo {
+    text-align: center;
+  }
+
+  .nosotros .nos-col-izq a {
+    margin-right: 0;
+  }
+
+  .nosotros .nos-col-der .subtitulo,
+  .nosotros .nos-col-der .parrafo {
+    text-align: center;
+  }
+
+  .nosotros a {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Contáctenos */
+  .cont-fila-arr {
+    flex: 100%;
+  }
+
+  .cont-fila-abj {
+    flex: 100%;
   }
 }
